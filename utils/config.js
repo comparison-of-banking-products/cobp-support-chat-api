@@ -29,6 +29,7 @@ module.exports = {
   BOT_TOKEN,
   GROUP_ID,
   TOPIC_ID,
+  SUPPORT_EMAIL,
   corsOptions,
   emailConfig,
 };
