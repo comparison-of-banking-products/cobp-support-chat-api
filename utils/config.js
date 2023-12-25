@@ -1,20 +1,19 @@
-require('dotenv').config();
+require("dotenv").config();
 
 const PORT = process.env.PORT || 8082;
-const {
-  BOT_TOKEN, GROUP_ID, TOPIC_ID, SUPPORT_EMAIL, EMAIL_PASS,
-} = process.env;
+const { BOT_TOKEN, GROUP_ID, TOPIC_ID, SUPPORT_EMAIL, EMAIL_PASS } =
+  process.env;
 
 const corsOptions = {
   origin: [
-    'http://localhost:3000',
-    'http://80.87.107.99:8081',
-    'https://80.87.107.99:8081',
+    "http://localhost:3000",
+    "http://80.87.107.99:8081",
+    "https://80.87.107.99:8081",
   ],
 };
 
 const emailConfig = {
-  host: 'smtp.gmail.com',
+  host: "smtp.gmail.com",
   port: 465,
   secure: true,
   auth: {
@@ -29,7 +28,6 @@ module.exports = {
   BOT_TOKEN,
   GROUP_ID,
   TOPIC_ID,
-  SUPPORT_EMAIL,
   corsOptions,
   emailConfig,
 };
