@@ -37,7 +37,7 @@ bot.on('text', async (msg) => {
       const mailOptions = {
         from: 'benchbot24@gmail.com',
         to: email,
-        subject: 'Ответ на ваш вопрос в чате поддержки',
+        subject: 'Ответ на Ваш вопрос в чате поддержки',
         text: `Здравствуйте, ${name}!\n\nВаш вопрос:\n${question}\n\nОтвет в чате:\n${replyText}`,
       };
 
